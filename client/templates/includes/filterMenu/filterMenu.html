@@ -1,0 +1,208 @@
+<template name="filterMenu">
+<div id="leftFilterMenu" class="ui sidebar inverted vertical menu">	
+	<div id='filter_main_menu_wrapper' class="left_main_menu_wrapper_displaced">
+		<div id='filter_main_menu_top_container'>
+			<div id='filter_main_menu_title'>Filtrar Resultados</div>
+			<div id='filter_main_menu_check'>
+				<a href='javascript:void(0)' class='main_check' id='check_all'>marcar todo</a>
+				<a href='javascript:void(0)' class='main_check' id='uncheck_all'>desmarcar</a>
+			</div>
+		</div>
+		<div id='filter_main_menu_bottom_container'>
+			<div id='filter_menu_accordion'>
+				<form action="/datax/pages/results" id="FilterDisplayForm" method="post" accept-charset="utf-8">
+					<div style="display:none;">
+						<input type="hidden" name="_method" value="POST"/>
+					</div>
+					<div class='left_menu_header'>
+						<div class='left_menu_chevron'>
+							<svg version="1.1" id="Chevron_right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+								<path d="M9.163,4.516c0.418,0.408,4.502,4.695,4.502,4.695C13.888,9.43,14,9.715,14,10s-0.112,0.57-0.335,0.787c0,0-4.084,4.289-4.502,4.695c-0.418,0.408-1.17,0.436-1.615,0c-0.446-0.434-0.481-1.041,0-1.574L11.295,10L7.548,6.092c-0.481-0.533-0.446-1.141,0-1.576C7.993,4.08,8.745,4.107,9.163,4.516z"/>
+							</svg>
+						</div> 
+						<div class='left_menu_header_title'>
+							<div class="input checkbox">
+								<input type="hidden" name="data[Filter][Acerca de nosotros]" id="FilterAcercaDeNosotros_" value="0"/>
+								<input type="checkbox" name="data[Filter][Acerca de nosotros]"  data-category="Acerca de nosotros" class="category_parent filter_checkbox" value="1" id="FilterAcercaDeNosotros"/><label for="FilterAcercaDeNosotros">Acerca de nosotros</label></div>    <!-- Acerca de nosotros -->
+						</div>
+					</div>
+					<div class='left_menu_accordion_links'>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Compañia]" id="FilterCompañia_" value="0"/>
+							<input type="checkbox" name="data[Filter][Compañia]"  data-category="Acerca de nosotros" class="filter_checkbox" value="1" id="FilterCompañia"/>
+							<label for="FilterCompañia">Compañia</label>
+						</div>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Responsabilidad Social]" id="FilterResponsabilidadSocial_" value="0"/>
+							<input type="checkbox" name="data[Filter][Responsabilidad Social]"  data-category="Acerca de nosotros" class="filter_checkbox" value="1" id="FilterResponsabilidadSocial"/>
+							<label for="FilterResponsabilidadSocial">Responsabilidad Social</label>
+						</div>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Contactos]" id="FilterContactos_" value="0"/>
+							<input type="checkbox" name="data[Filter][Contactos]"  data-category="Acerca de nosotros" class="filter_checkbox" value="1" id="FilterContactos"/>
+							<label for="FilterContactos">Contactos</label>
+						</div>
+					</div>
+					<div class='left_menu_header'>
+						<div class='left_menu_chevron'>
+							<svg version="1.1" id="Chevron_right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+								<path d="M9.163,4.516c0.418,0.408,4.502,4.695,4.502,4.695C13.888,9.43,14,9.715,14,10s-0.112,0.57-0.335,0.787c0,0-4.084,4.289-4.502,4.695c-0.418,0.408-1.17,0.436-1.615,0c-0.446-0.434-0.481-1.041,0-1.574L11.295,10L7.548,6.092  c-0.481-0.533-0.446-1.141,0-1.576C7.993,4.08,8.745,4.107,9.163,4.516z"/>
+							</svg>
+						</div> 
+						<div class='left_menu_header_title'>
+							<div class="input checkbox">
+								<input type="hidden" name="data[Filter][Productos]" id="FilterProductos_" value="0"/>
+								<input type="checkbox" name="data[Filter][Productos]"  data-category="Productos" class="category_parent filter_checkbox" value="1" id="FilterProductos"/>
+								<label for="FilterProductos">Productos</label>
+							</div>    <!-- Productos -->
+						</div>
+					</div>
+					<div class='left_menu_accordion_links'>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Compañia]" id="FilterCompañia_" value="0"/>
+							<input type="checkbox" name="data[Filter][Compañia]"  data-category="Productos" class="filter_checkbox" value="1" id="FilterCompañia"/>
+							<label for="FilterCompañia">Compañia</label>
+						</div>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Contactos]" id="FilterContactos_" value="0"/>
+							<input type="checkbox" name="data[Filter][Contactos]"  data-category="Productos" class="filter_checkbox" value="1" id="FilterContactos"/>
+							<label for="FilterContactos">Contactos</label>
+						</div>
+					</div>
+					<div class='left_menu_header'>
+						<div class='left_menu_chevron'>
+							<svg version="1.1" id="Chevron_right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+								<path d="M9.163,4.516c0.418,0.408,4.502,4.695,4.502,4.695C13.888,9.43,14,9.715,14,10s-0.112,0.57-0.335,0.787c0,0-4.084,4.289-4.502,4.695c-0.418,0.408-1.17,0.436-1.615,0c-0.446-0.434-0.481-1.041,0-1.574L11.295,10L7.548,6.092c-0.481-0.533-0.446-1.141,0-1.576C7.993,4.08,8.745,4.107,9.163,4.516z"/>
+							</svg>
+						</div> 
+						<div class='left_menu_header_title'>
+							<div class="input checkbox">
+								<input type="hidden" name="data[Filter][Acceso a la base de datos]" id="FilterAccesoALaBaseDeDatos_" value="0"/>
+								<input type="checkbox" name="data[Filter][Acceso a la base de datos]"  data-category="Acceso a la base de datos" class="category_parent filter_checkbox" value="1" id="FilterAccesoALaBaseDeDatos"/>
+								<label for="FilterAccesoALaBaseDeDatos">Acceso a la base de datos</label>
+							</div>    <!-- Acceso a la base de datos -->
+						</div>
+					</div>
+					<div class='left_menu_accordion_links'>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Compañia]" id="FilterCompañia_" value="0"/>
+							<input type="checkbox" name="data[Filter][Compañia]"  data-category="Acceso a la base de datos" class="filter_checkbox" value="1" id="FilterCompañia"/>
+							<label for="FilterCompañia">Compañia</label>
+						</div>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Responsabilidad Social]" id="FilterResponsabilidadSocial_" value="0"/>
+							<input type="checkbox" name="data[Filter][Responsabilidad Social]"  data-category="Acceso a la base de datos" class="filter_checkbox" value="1" id="FilterResponsabilidadSocial"/>
+							<label for="FilterResponsabilidadSocial">Responsabilidad Social</label>
+						</div>
+					</div>
+					<div class='left_menu_header'>
+						<div class='left_menu_chevron'>
+							<svg version="1.1" id="Chevron_right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+								<path d="M9.163,4.516c0.418,0.408,4.502,4.695,4.502,4.695C13.888,9.43,14,9.715,14,10s-0.112,0.57-0.335,0.787c0,0-4.084,4.289-4.502,4.695c-0.418,0.408-1.17,0.436-1.615,0c-0.446-0.434-0.481-1.041,0-1.574L11.295,10L7.548,6.092 c-0.481-0.533-0.446-1.141,0-1.576C7.993,4.08,8.745,4.107,9.163,4.516z"/>
+							</svg>
+						</div> 
+						<div class='left_menu_header_title'>
+							<div class="input checkbox">
+								<input type="hidden" name="data[Filter][Datos]" id="FilterDatos_" value="0"/>
+								<input type="checkbox" name="data[Filter][Datos]"  data-category="Datos" class="category_parent filter_checkbox" value="1" id="FilterDatos"/>
+								<label for="FilterDatos">Datos</label>
+							</div>    <!-- Datos -->
+						</div>
+					</div>
+					<div class='left_menu_accordion_links'>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Compañia]" id="FilterCompañia_" value="0"/>
+							<input type="checkbox" name="data[Filter][Compañia]"  data-category="Datos" class="filter_checkbox" value="1" id="FilterCompañia"/>
+							<label for="FilterCompañia">Compañia</label>
+						</div>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Contactos]" id="FilterContactos_" value="0"/>
+							<input type="checkbox" name="data[Filter][Contactos]"  data-category="Datos" class="filter_checkbox" value="1" id="FilterContactos"/>
+							<label for="FilterContactos">Contactos</label>
+						</div>
+					</div>
+					<div class='left_menu_header'>
+						<div class='left_menu_chevron'>
+							<svg version="1.1" id="Chevron_right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+								<path d="M9.163,4.516c0.418,0.408,4.502,4.695,4.502,4.695C13.888,9.43,14,9.715,14,10s-0.112,0.57-0.335,0.787c0,0-4.084,4.289-4.502,4.695c-0.418,0.408-1.17,0.436-1.615,0c-0.446-0.434-0.481-1.041,0-1.574L11.295,10L7.548,6.092c-0.481-0.533-0.446-1.141,0-1.576C7.993,4.08,8.745,4.107,9.163,4.516z"/>
+							</svg>
+						</div> 
+						<div class='left_menu_header_title'>
+							<div class="input checkbox">
+								<input type="hidden" name="data[Filter][Legal]" id="FilterLegal_" value="0"/>
+								<input type="checkbox" name="data[Filter][Legal]"  data-category="Legal" class="category_parent filter_checkbox" value="1" id="FilterLegal"/>
+								<label for="FilterLegal">Legal</label>
+							</div>    <!-- Legal -->
+						</div>
+					</div>
+					<div class='left_menu_accordion_links'>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Responsabilidad Social]" id="FilterResponsabilidadSocial_" value="0"/>
+							<input type="checkbox" name="data[Filter][Responsabilidad Social]"  data-category="Legal" class="filter_checkbox" value="1" id="FilterResponsabilidadSocial"/>
+							<label for="FilterResponsabilidadSocial">Responsabilidad Social</label>
+						</div>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Contactos]" id="FilterContactos_" value="0"/>
+							<input type="checkbox" name="data[Filter][Contactos]"  data-category="Legal" class="filter_checkbox" value="1" id="FilterContactos"/>
+							<label for="FilterContactos">Contactos</label>
+						</div>
+					</div>
+					<div class='left_menu_header'>
+						<div class='left_menu_chevron'>
+							<svg version="1.1" id="Chevron_right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+								<path d="M9.163,4.516c0.418,0.408,4.502,4.695,4.502,4.695C13.888,9.43,14,9.715,14,10s-0.112,0.57-0.335,0.787c0,0-4.084,4.289-4.502,4.695c-0.418,0.408-1.17,0.436-1.615,0c-0.446-0.434-0.481-1.041,0-1.574L11.295,10L7.548,6.092 c-0.481-0.533-0.446-1.141,0-1.576C7.993,4.08,8.745,4.107,9.163,4.516z"/>
+							</svg>
+						</div> 
+						<div class='left_menu_header_title'>
+							<div class="input checkbox">
+								<input type="hidden" name="data[Filter][Herramientas]" id="FilterHerramientas_" value="0"/>
+								<input type="checkbox" name="data[Filter][Herramientas]"  data-category="Herramientas" class="category_parent filter_checkbox" value="1" id="FilterHerramientas"/>
+								<label for="FilterHerramientas">Herramientas</label>
+							</div>    <!-- Herramientas -->
+						</div>
+					</div>
+					<div class='left_menu_accordion_links'>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Compañia]" id="FilterCompañia_" value="0"/>
+							<input type="checkbox" name="data[Filter][Compañia]"  data-category="Herramientas" class="filter_checkbox" value="1" id="FilterCompañia"/>
+							<label for="FilterCompañia">Compañia</label>
+						</div>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Responsabilidad Social]" id="FilterResponsabilidadSocial_" value="0"/>
+							<input type="checkbox" name="data[Filter][Responsabilidad Social]"  data-category="Herramientas" class="filter_checkbox" value="1" id="FilterResponsabilidadSocial"/>
+							<label for="FilterResponsabilidadSocial">Responsabilidad Social</label>
+						</div>
+					</div>
+					<div class='left_menu_header'>
+						<div class='left_menu_chevron'>
+							<svg version="1.1" id="Chevron_right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+								<path d="M9.163,4.516c0.418,0.408,4.502,4.695,4.502,4.695C13.888,9.43,14,9.715,14,10s-0.112,0.57-0.335,0.787c0,0-4.084,4.289-4.502,4.695c-0.418,0.408-1.17,0.436-1.615,0c-0.446-0.434-0.481-1.041,0-1.574L11.295,10L7.548,6.092 c-0.481-0.533-0.446-1.141,0-1.576C7.993,4.08,8.745,4.107,9.163,4.516z"/>
+							</svg>
+						</div> 
+						<div class='left_menu_header_title'>
+							<div class="input checkbox">
+								<input type="hidden" name="data[Filter][Mi Cuenta]" id="FilterMiCuenta_" value="0"/>
+								<input type="checkbox" name="data[Filter][Mi Cuenta]"  data-category="Mi Cuenta" class="category_parent filter_checkbox" value="1" id="FilterMiCuenta"/>
+								<label for="FilterMiCuenta">Mi Cuenta</label>
+							</div>    <!-- Mi Cuenta -->
+						</div>
+					</div>
+					<div class='left_menu_accordion_links'>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Compañia]" id="FilterCompañia_" value="0"/>
+							<input type="checkbox" name="data[Filter][Compañia]"  data-category="Mi Cuenta" class="filter_checkbox" value="1" id="FilterCompañia"/>
+							<label for="FilterCompañia">Compañia</label>
+						</div>
+						<div class="input checkbox">
+							<input type="hidden" name="data[Filter][Contactos]" id="FilterContactos_" value="0"/>
+							<input type="checkbox" name="data[Filter][Contactos]"  data-category="Mi Cuenta" class="filter_checkbox" value="1" id="FilterContactos"/>
+							<label for="FilterContactos">Contactos</label>
+						</div>
+					</div>
+				</form>   
+			</div>
+		</div>
+	</div>
+ 
+ </div>
+</template>

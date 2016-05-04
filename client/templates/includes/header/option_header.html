@@ -1,0 +1,431 @@
+<template name="optionsHeader">
+
+<div id="header_btns_container">
+
+<!-- ayudas-->
+  <div class='guide_dote' id='datapoint_guide_dote'  data-tp-my='top right' data-tp-at='bottom center' data-adjust='10' ></div>
+  <div class='guide_tooltip' id='datapoint_guide_tooltip'>
+    <div class='guide_tooltip_title'>Mis puntos de datos</div>
+    <p class='guide_tooltip_p'>
+      Los puntos de datos son fragmentos de base de datos. Por ejemplo dentro de la base de datos     <span class='bold italic'>"Cotizaciones de minerales y metales" </span>
+      un punto de datos seria 
+      <span class='bold italic'>"Cotización del oro" </span>.
+    </p>
+    <p class='guide_tooltip_p'>Con este botón puedes consultar rápidamente los puntos de datos que has guardado.</p>
+  </div>
+
+  <div class='guide_dote' id='dataset_guide_dote' data-tp-my='top right' data-tp-at='bottom center' data-adjust='10' ></div>
+  <div class='guide_tooltip' id='dataset_guide_tooltip'>
+    <div class='guide_tooltip_title'>Mis series de datos</div>
+    <p class='guide_tooltip_p'>
+      Las series de datos son tablas de comparación entre puntos de datos. Por ejemplo dentro de la base de datos<span class='bold italic'>"Cotizaciones de minerales y metales" </span>
+      una serie de datos seria<span class='bold italic'>"Precios de piedas preciosas" </span>.
+    </p>
+    <p class='guide_tooltip_p'>
+      Con este botón puedes consultar rápidamente las series de datos que has guardado.  
+    </p>
+  </div>
+
+  <div class='guide_dote' id='db_guide_dote' data-tp-my='top right' data-tp-at='bottom center' data-adjust='10' ></div>
+  <div class='guide_tooltip' id='db_guide_tooltip'>
+    <div class='guide_tooltip_title'>Mis bases de datos OLAP</div>
+    <p class='guide_tooltip_p'>
+      Las bases que usas (gratuitas o de pago) pasan a ser base de tipo OLAP (On-Line Analytical Processing; Procesamiento analítico en línea).  </p>
+    <p class='guide_tooltip_p'>
+      Con este botón puedes consultar rápidamente las bases OLAP que has guardado o usado. 
+    </p>
+  </div>
+<!-- FIN ayudas-->
+
+	<a href="JavaScript:;" id='datapoint_btn' class='header_btn'>
+          <svg version="1.1" id="datapoint_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="40px" height="40px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+            <style type="text/css">
+            .st0{fill:#FFFFFF;}
+            .st1{fill:#B3B3B3;}
+            .st2{clip-path:url(#SVGID_1_);}
+            .st3{fill:none;stroke:#EC2227;stroke-width:0.9525;stroke-linejoin:round;}
+            .st4{fill:none;stroke:#74BF44;stroke-width:0.9525;stroke-linejoin:round;}
+            .st5{fill:none;stroke:#FBED21;stroke-width:0.9525;stroke-linejoin:round;}
+            </style>
+            <g>
+              <g>
+                <path class="st0" d="M20,40C9,40,0,31,0,20S9,0,20,0s20,9,20,20S31,40,20,40z M20,1.6C9.8,1.6,1.6,9.8,1.6,20S9.8,38.4,20,38.4
+                S38.4,30.2,38.4,20S30.2,1.6,20,1.6z"/>
+              </g>
+              <path class="st0" d="M20,3.3C10.8,3.3,3.3,10.8,3.3,20S10.8,36.7,20,36.7c9.2,0,16.7-7.5,16.7-16.7S29.2,3.3,20,3.3z M31,20.7h-7.8
+            c0,1.1-1.5,2.6-3.3,2.6c-1.9,0-3-1.5-3-2.6H9.4v-1.4h7.3c0.4-1.4,1.7-2.5,3.3-2.5c1.6,0,2.9,1,3.3,2.5H31V20.7z"/>
+            </g>
+          </svg>
+        </a>
+
+        
+        <div class='accordion_tooltip_wrapper'> 
+        <!--<div class='accordion_tooltip_wrapper' > -->
+          <div class='accordion_tooltip_title'>mis puntos de datos</div>
+          <div class='accordion_tooltip'>
+            <div class='accordion_tooltip_header odd_header_row'>
+              <span class='accordion_plus_wrapper'>
+            <i class="fa fa-plus"></i>
+          </span>
+          <span class='accordion_header_middle_wrapper'>
+            <div class='accordion_header_middle_title'>Cotización del Oro</div>
+            <div class='accordion_header_middle_content'>
+              <span class='ahmc_left'> ASFI</span>
+              <span class='ahmc_right'>15-jul-14</span>
+            </div>
+          </span>
+          <span class='accordion_header_right_link_wrapper'>
+            <div class='ahrc_link_container'>
+              <div class='ahrc_link'></div>
+            </div>
+          </span>
+          <span class='accordion_header_right_content'>
+            <div class='ahrc_top_content'>9.48</div>
+            <div class='ahrc_bottom_content red_color'>
+              <span class='abt_left'>-0.21</span>
+              <span class='abt_right'>-2.25%</span>
+            </div>
+          </span>
+          </div>
+
+
+          </div>
+        </div>
+
+    <a href="JavaScript:;" id='dataset_btn' class='header_btn'>
+       <svg version="1.1" id="dataset_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="40px" height="40px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+        <style type="text/css">
+        .st0{fill:#FFFFFF;}
+        .st1{fill:#B3B3B3;}
+        .st2{clip-path:url(#SVGID_1_);}
+        .st3{fill:none;stroke:#EC2227;stroke-width:0.9525;stroke-linejoin:round;}
+        .st4{fill:none;stroke:#74BF44;stroke-width:0.9525;stroke-linejoin:round;}
+        .st5{fill:none;stroke:#FBED21;stroke-width:0.9525;stroke-linejoin:round;}
+        </style>
+        <g>
+          <g>
+            <path class="st0" d="M20,40C9,40,0,31,0,20S9,0,20,0c11,0,20,9,20,20S31,40,20,40z M20,1.6C9.8,1.6,1.6,9.8,1.6,20
+            S9.8,38.4,20,38.4c10.2,0,18.4-8.3,18.4-18.4S30.2,1.6,20,1.6z"/>
+          </g>
+          <path class="st0" d="M20,3.3C10.8,3.3,3.3,10.8,3.3,20S10.8,36.7,20,36.7c9.2,0,16.7-7.5,16.7-16.7S29.2,3.3,20,3.3z M7.9,24.4
+          l7.2-10.9l3.9,4.4l2.1-2.5l2.3,2.5l2.5-3.4l-4.1-0.3l1.8-0.8l6.9-3.4l-0.4,9.9l-1.9-4L23.7,22l-2.4-2.6l-2.2,2.6l-3.6-4.1l-5.3,8.1
+          L7.9,24.4z M31,27.2H8v-1.4h4.5l0,0h1.4l0,0H18l0,0h1.4l0,0h5.6h-0.1l0,0h0.1H31V27.2z"/>
+        </g>
+      </svg>
+    </a>
+
+     <div class='accordion_tooltip_wrapper'>
+        <div class='accordion_tooltip_title'>mis series de datos</div>
+        <div class='accordion_tooltip'>
+          <div class='accordion_tooltip_header odd_header_row'>
+            <span class='accordion_plus_wrapper'><i class="fa fa-plus"></i></span>
+            <span class='accordion_header_middle_wrapper'>
+              <div class='accordion_header_middle_title'>Cotización del oro</div>
+              <div class='accordion_header_middle_content'>
+                <span class='ahmc_option'>
+                  <div class='ahmc_option_square yelow_square'></div>
+                  <div class='ahmc_title_option'>Oro</div>
+                </span>
+              </div>
+            </span>
+            <span class='accordion_header_right_link_wrapper'>
+              <div class='ahrc_link_container'>
+                <div class='ahrc_link'></div>
+              </div>
+            </span>
+          </div>
+          <div class='accordion_tooltip_content odd_header_row'>
+            <img src="/datax/img/figure_data_points.png" alt="" />
+          </div>
+          <div class='accordion_tooltip_header pair_header_row'>
+            <span class='accordion_plus_wrapper'>
+              <i class="fa fa-plus"></i>
+            </span>
+            <span class='accordion_header_middle_wrapper'>
+              <div class='accordion_header_middle_title'>Canasta Familiar</div>
+              <div class='accordion_header_middle_content'>
+                <span class='ahmc_option'>
+                  <div class='ahmc_option_square green_square'>
+                  </div>
+                  <div class='ahmc_title_option'>Pan</div>
+                </span>
+                <span class='ahmc_option ahmc_middle_option'>
+                  <div class='ahmc_option_square brown_square'>
+                  </div>
+                  <div class='ahmc_title_option'>Carne</div>
+                </span>
+                <span class='ahmc_option'>
+                  <div class='ahmc_option_square blue_square'>
+                  </div>
+                  <div class='ahmc_title_option'>Leche</div>
+                </span>
+              </div>
+            </span>
+            <span class='accordion_header_right_link_wrapper'>
+              <div class='ahrc_link_container'>
+                <div class='ahrc_link'></div>
+              </div>
+            </span>
+          </div>
+          <div class='accordion_tooltip_content pair_header_row'>
+            <img src="/datax/img/figure_data_points.png" alt="" />
+          </div>
+        </div>
+      </div>  
+
+      <a href="JavaScript:;" id='db_btn' class='header_btn'>
+        <svg version="1.1" id="db_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="40px" height="40px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+        <style type="text/css">
+        .st0{fill:#FFFFFF;}
+        .st1{fill:#B3B3B3;}
+        .st2{clip-path:url(#SVGID_1_);}
+        .st3{fill:none;stroke:#EC2227;stroke-width:0.9525;stroke-linejoin:round;}
+        .st4{fill:none;stroke:#74BF44;stroke-width:0.9525;stroke-linejoin:round;}
+        .st5{fill:none;stroke:#FBED21;stroke-width:0.9525;stroke-linejoin:round;}
+        </style>
+        <g>
+          <g>
+            <path class="st0" d="M19.5,40C8.4,39.7-0.3,30.5,0,19.5S9.5-0.3,20.5,0S40.3,9.5,40,20.5S30.5,40.3,19.5,40z M20.5,1.6
+            C10.3,1.3,1.8,9.4,1.6,19.5s7.8,18.7,17.9,18.9s18.7-7.8,18.9-17.9S30.6,1.8,20.5,1.6z"/>
+          </g>
+          <path class="st0" d="M20.4,3.3C11.2,3,3.5,10.3,3.3,19.6s7,16.9,16.3,17.1c9.2,0.2,16.9-7,17.1-16.3C37,11.2,29.7,3.5,20.4,3.3z
+          M20.8,8l3.8,2.4l-4.3,2.2l-3.9-2.4L20.8,8z M15.1,10.9l3.9,2.5l-4.4,2.3l-3.9-2.5L15.1,10.9z M12.8,27.6l-3.8-2.5l0.2-4.2l3.8,2.4
+          L12.8,27.6z M13,21.6l-3.8-2.4l0.2-5.2l3.8,2.4L13,21.6z M18.9,31.6l-4.7-3.1l0.2-4.3l4.7,3L18.9,31.6z M19.2,25.5l-4.7-3l0.2-5.2
+          l4.7,3L19.2,25.5z M15.9,16.5l4.4-2.3l4.1,2.6L20.1,19L15.9,16.5z M25.1,29l-4.7,2.5l0.2-4.4l4.7-2.4L25.1,29z M25.3,23l-4.7,2.4
+          l0.2-5.2l4.7-2.4L25.3,23z M21.8,13.5l4.3-2.2l4.1,2.6L25.9,16L21.8,13.5z M30.6,26l-4,2.2l0.2-4.3l4-2.1L30.6,26z M30.9,20.1
+          l-4,2.1l0.2-5.2l4-2.1L30.9,20.1z"/>
+        </g>
+      </svg>      
+      </a>
+
+      <div class='db_header_tooltip_wrapper'>
+        <div class='accordion_tooltip_title'>mis bases de datos olap</div>
+          <div class='db_header_tooltip_container'>
+            <div class='odd_header_row'>
+              <div class='db_header_title_row'>Población Total por Quinquenios de América</div>
+              <div class='db_header_content_row'>
+                <div class='db_header_state_wrapper'>
+                  <div class='db_header_state_title'>Estado:</div>
+                  <div class='db_svg db_yellow_svg'>
+                    <svg version="1.1" id="db_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                      <g>
+                      <polygon  points="0.8,3.7 3.5,5.3 6.4,3.6 3.7,2.1   "/>
+                      <polygon  points="2.7,9.4 2.7,5.9 0,4.4 0,7.9   "/>
+                      <polygon  points="6.9,11.9 6.9,8.4 3.7,6.5 3.7,10   "/>
+                      <polygon  points="4.5,5.9 7.3,7.5 10.2,5.8 7.4,4.2  "/>
+                      <polygon  points="6.9,13 3.7,11.1 3.7,14.1 6.9,16   "/>
+                      <polygon  points="11,10 11,6.5 7.9,8.3 7.9,11.8   "/>
+                      <polygon  points="7.4,3.1 10.2,1.5 7.6,0 4.7,1.6  "/>
+                      <polygon  points="2.7,10.6 0,9 0,11.9 2.7,13.5  "/>
+                      <polygon  points="11,11.1 7.9,12.9 7.9,15.9 11,14.1   "/>
+                      <polygon  points="12,10.6 12,13.5 14.7,11.9 14.7,9  "/>
+                      <polygon  points="14.7,4.4 12,5.9 12,9.4 14.7,7.9   "/>
+                      <polygon  points="11.2,2.1 8.4,3.7 11.2,5.3 14,3.7  "/>
+                      </g>
+                    </svg>          
+                  </div>
+                </div>
+                <div class='db_header_using_wrapper'>
+                  <div class='db_header_using_title'>Usando:</div>
+                    <div class='db_svg db_blue_svg'>
+                      <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                      <g>
+                        <polygon points="16,11.4 7.8,3.2 16,3.2  "/>
+                        <g>
+                        <polygon points="2,12.8 0.1,10.9 6,4.9 9.1,8 12.1,5 14,6.9 9.1,11.8 6,8.7    "/>
+                        </g>
+                      </g>
+                      </svg>      
+                    </div>
+                  <div class='db_svg db_blue_svg'>
+                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                    <path  d="M16,6.8l-3.4,0C12.2,4.6,10.3,3,8,3S3.8,4.6,3.4,6.7L0,6.7l0,2l3.4,0c0.5,2.1,2.4,3.8,4.6,3.8
+                    s4.2-1.6,4.6-3.7l3.4,0L16,6.8z"/>
+                    </svg>
+                  </div>
+                </div>
+                <span class="accordion_header_right_link_wrapper">
+                  <div class="ahrc_link_container">
+                    <div class="ahrc_link" style="border-left: 7px solid rgb(153, 153, 153);"></div>
+                  </div>
+                </span>
+              </div>
+            </div>
+            <div class='pair_header_row'>
+              <div class='db_header_title_row'>Población Total por Quinquenios de América...</div>
+              <div class='db_header_content_row'>
+                <div class='db_header_state_wrapper'>
+                  <div class='db_header_state_title'>Estado:</div>
+                  <div class='db_svg db_green_svg'>
+                    <svg version="1.1" id="db_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                      <g>
+                      <polygon  points="0.8,3.7 3.5,5.3 6.4,3.6 3.7,2.1   "/>
+                      <polygon  points="2.7,9.4 2.7,5.9 0,4.4 0,7.9   "/>
+                      <polygon  points="6.9,11.9 6.9,8.4 3.7,6.5 3.7,10   "/>
+                      <polygon  points="4.5,5.9 7.3,7.5 10.2,5.8 7.4,4.2  "/>
+                      <polygon  points="6.9,13 3.7,11.1 3.7,14.1 6.9,16   "/>
+                      <polygon  points="11,10 11,6.5 7.9,8.3 7.9,11.8   "/>
+                      <polygon  points="7.4,3.1 10.2,1.5 7.6,0 4.7,1.6  "/>
+                      <polygon  points="2.7,10.6 0,9 0,11.9 2.7,13.5  "/>
+                      <polygon  points="11,11.1 7.9,12.9 7.9,15.9 11,14.1   "/>
+                      <polygon  points="12,10.6 12,13.5 14.7,11.9 14.7,9  "/>
+                      <polygon  points="14.7,4.4 12,5.9 12,9.4 14.7,7.9   "/>
+                      <polygon  points="11.2,2.1 8.4,3.7 11.2,5.3 14,3.7  "/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class='db_header_using_wrapper'>
+                  <div class='db_header_using_title'>Usando:</div>
+                  <div class='db_svg db_blue_svg'>
+                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                    <g>
+                    <polygon points="16,11.4 7.8,3.2 16,3.2  "/>
+                    <g>
+                      <polygon points="2,12.8 0.1,10.9 6,4.9 9.1,8 12.1,5 14,6.9 9.1,11.8 6,8.7    "/>
+                    </g>
+                    </g>
+                    </svg>
+                  </div>
+                  <div class='db_svg db_blue_svg'>
+                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                    <path  d="M16,6.8l-3.4,0C12.2,4.6,10.3,3,8,3S3.8,4.6,3.4,6.7L0,6.7l0,2l3.4,0c0.5,2.1,2.4,3.8,4.6,3.8
+                    s4.2-1.6,4.6-3.7l3.4,0L16,6.8z"/>
+                    </svg>
+                  </div>
+                </div>
+                <span class="accordion_header_right_link_wrapper">
+                  <div class="ahrc_link_container">
+                    <div class="ahrc_link" style="border-left: 7px solid rgb(153, 153, 153);"></div>
+                  </div>
+                </span>
+              </div>
+            </div>
+            <div class='odd_header_row'>
+              <div class='db_header_title_row'>Accusantium doloremque laudantium</div>
+              <div class='db_header_content_row'>
+                <div class='db_header_state_wrapper'>
+                  <div class='db_header_state_title'>Estado:</div>
+                  <div class='db_svg db_purple_svg'>
+                    <svg version="1.1" id="db_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                      <g>
+                      <polygon  points="0.8,3.7 3.5,5.3 6.4,3.6 3.7,2.1   "/>
+                      <polygon  points="2.7,9.4 2.7,5.9 0,4.4 0,7.9   "/>
+                      <polygon  points="6.9,11.9 6.9,8.4 3.7,6.5 3.7,10   "/>
+                      <polygon  points="4.5,5.9 7.3,7.5 10.2,5.8 7.4,4.2  "/>
+                      <polygon  points="6.9,13 3.7,11.1 3.7,14.1 6.9,16   "/>
+                      <polygon  points="11,10 11,6.5 7.9,8.3 7.9,11.8   "/>
+                      <polygon  points="7.4,3.1 10.2,1.5 7.6,0 4.7,1.6  "/>
+                      <polygon  points="2.7,10.6 0,9 0,11.9 2.7,13.5  "/>
+                      <polygon  points="11,11.1 7.9,12.9 7.9,15.9 11,14.1   "/>
+                      <polygon  points="12,10.6 12,13.5 14.7,11.9 14.7,9  "/>
+                      <polygon  points="14.7,4.4 12,5.9 12,9.4 14.7,7.9   "/>
+                      <polygon  points="11.2,2.1 8.4,3.7 11.2,5.3 14,3.7  "/>
+                      </g>
+                    </svg>          
+                  </div>
+                </div>
+                <div class='db_header_using_wrapper'>
+                  <div class='db_header_using_title'>Usando:</div>
+                  <div class='db_svg db_blue_svg'>
+                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                    <g>
+                      <polygon points="16,11.4 7.8,3.2 16,3.2  "/>
+                      <g>
+                      <polygon points="2,12.8 0.1,10.9 6,4.9 9.1,8 12.1,5 14,6.9 9.1,11.8 6,8.7    "/>
+                      </g>
+                    </g>
+                    </svg>
+                  </div>
+                  <div class='db_svg db_blue_svg'>
+                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                      <path  d="M16,6.8l-3.4,0C12.2,4.6,10.3,3,8,3S3.8,4.6,3.4,6.7L0,6.7l0,2l3.4,0c0.5,2.1,2.4,3.8,4.6,3.8
+                      s4.2-1.6,4.6-3.7l3.4,0L16,6.8z"/>
+                    </svg>      
+                  </div>
+                </div>
+                <span class="accordion_header_right_link_wrapper">
+                  <div class="ahrc_link_container">
+                    <div class="ahrc_link" style="border-left: 7px solid rgb(153, 153, 153);"></div>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+      </div>
+</div>
+
+
+<div id='login_link_container' class='hidden_content' >
+  <div class='guide_dote' id='login_guide_dote' data-tp-my='top right' data-tp-at='bottom center' data-adjust='10' ></div>
+  <div class='guide_tooltip' id='login_guide_tooltip'>
+    <div class='guide_tooltip_title'>Mis bases de datos OLAP? </div>
+    <p class='guide_tooltip_p'>Consulta rápidamente nuestras bases de datos por categorías.</p>
+  </div>
+  <a href="JavaScript:;" id='login_link' > Ingresar/Registrarse</a>
+  <div id='login_tooltip'>
+    <div id='lt_top_wrapper'>
+      <div id='lt_top_msg'>
+      Ingresa a Datax usando una de tus redes sociales favoritas.      </div>
+      <a href='JavaScript:;' class='lt_top_link' id='lt_top_gmail'></a>
+      <a href='JavaScript:;' class='lt_top_link' id='lt_top_facebook'></a>
+      <a href='JavaScript:;' class='lt_top_link' id='lt_top_twitter'></a>
+    </div>
+    <div id='lt_bottom_wrapper'>
+      <div id='lt_bottom_msg'>O puedes usar tu cuenta de Datax</div>
+      <div id='lt_bottom_form_wrapper'>
+      <form id='account_login_form' accept-charset='utf-8' method='get' action='' >
+        <input class='account_input' id='account_user' type='text' placeholder=" Usuario" >
+        <input class='account_input' id='password' type='text' placeholder=" Contraseña" >
+        <div id='account_login_submit_btn'>
+          <div id='account_login_sub_btn'>
+            <i id='account_login_fa' class="fa fa-chevron-right"></i>
+          </div>
+        </div>
+      </form>
+      <div id='lt_new_account_msg'>
+        ¿Usuario nuevo?          
+        <a href="JavaScript:;" id='new_account_link' onclick="$('#new_account_dialog').dialog('open');$('.qtip').hide();" >Registrarse</a>
+      </div>
+      </div>
+      <div id='lt_bottom_footer'>¡Descubre los beneficios de nuestros usuarios!</div>
+    </div>
+  </div>
+  <div id='new_account_dialog'></div> 
+</div>
+
+<div id='header_account_wrapper'>
+  <div id='haw_left_border'></div>
+  <a href="JavaScript:;" id='face_btn' class='header_btn'></a>
+  <div id='header_account_tooltip_wrapper'>
+    <div class='accordion_tooltip_title'>mi perfil</div>
+    <div id='header_account_tooltip_content_wrapper'>
+      <div id='hat_photo'></div>
+      <div id='hat_name_logout_wrapper'>
+        <div id='hat_name'>Richard Frontman</div>
+        <div id='hat_logout'>
+          <a href="JavaScript:;" id='hat_logout_link'>Cerrar Sesión</a>
+        </div>
+      </div>
+      <a href="JavaScript:;" class='hat_bottom_link'>mis cuenta</a>
+      <a href="JavaScript:;" class='hat_bottom_link'>mis datos</a>
+      <a href="JavaScript:;" class='hat_bottom_link'>mis ordenes</a>
+      <a href="JavaScript:;" class='hat_bottom_link'>mis terminos de uso</a>
+    </div>
+  </div>
+  <a href="JavaScript:;" id='header_my_account_link'>Mi cuenta</a>
+</div>
+
+</template>

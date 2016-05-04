@@ -1,0 +1,72 @@
+/*INICIO ESTILOS LEFT MENU O MENU PRINCIPAL*/
+#left_main_menu_top_container{
+  border-bottom: 1px solid #aeaeae;
+  padding: 20px 0 18px 30px;
+  border-right: 1px solid #aeaeae;
+}
+
+
+#left_main_menu_bottom_container {
+  border-right: 1px solid #aeaeae;
+  height: 100%;
+}
+
+#left_main_menu_title{
+  font-size: 25px;
+}
+
+#left_main_menu_language{
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.flag_wrapper{
+  width: 20px !important;
+  height: 15px !important; 
+}
+#us_flag{
+  margin-left: 10px;
+}
+#sp_flag{
+  border-color: #ebb42e;
+  border-width: 5px;
+  border-style: solid; 
+  border-width: 6px 10px;
+  margin-left: 5px;
+}
+
+
+
+/*INICIO ACORDEON DENTRO DEL LEFT MENU*/
+.ui.left.sidebar, .ui.right.sidebar{
+background-color: #EDEDED;
+
+
+}
+.ui.styled.accordion{
+    border-bottom: 0;
+    padding: 20px 0 18px 30px;
+    border-right: 1px solid #aeaeae;
+}
+.ui.inverted.menu .item{
+  background-color: transparent;
+  border: none;
+}
+.ui.styled.accordion, .ui.styled.accordion .accordion {
+  box-shadow: none;
+}
+.ui.inverted.menu a.item:hover {
+  color: BLACK;
+  }
+.ui.styled.accordion .content, .ui.styled.accordion .accordion .content {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.ui.accordion .accordion {
+  padding: 0;
+  }
+
+/*FIN ACORDEON DENTRO DEL LEFT MENU*/
+/*FINESTILOS LEFT MENU O MENU PRINCIPAL*/

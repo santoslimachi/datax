@@ -1,0 +1,21 @@
+<template name="layout">
+
+{{> leftMenu}}
+
+{{> filterMenu}}
+
+<div class="pusher">
+	<div id='main_content_wrapper'>
+		{{> header}} 
+		<div class="container">		
+			<div id="main">
+				{{> yield}}
+			</div>
+		</div>
+		<div id="footer">
+			{{> footer}}
+		</div>
+	</div>
+</div>
+
+</template>

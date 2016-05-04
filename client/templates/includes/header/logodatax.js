@@ -1,0 +1,1 @@
+//logodatax.js

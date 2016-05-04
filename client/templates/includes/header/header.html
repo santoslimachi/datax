@@ -1,0 +1,45 @@
+<template name="header">
+<header>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">  
+
+  <div id="header_container" class='main_container'>
+      <div id="button_left">
+           {{> buttonLeftMenu}}
+            <!--{{> resultHeader}} -->
+      </div>
+      {{> logoDatax}}
+      <div id='search_form_container'>
+         <div class='guide_dote' id='search_guide_dote' data-tp-my='top left' data-tp-at='bottom center' data-adjust='10' >
+         </div>
+          <div class='guide_tooltip' id='search_guide_tooltip' style="">
+            <div class='guide_tooltip_title'>
+              Búsqueda    </div>
+            <p class='guide_tooltip_p'>
+              Puedes buscar las bases de datos de tu preferencia en este botón.    </p>
+          </div>
+          <form id='search_form' accept-charset='utf-8' method='get' action='' >
+            <input id='search_input' type='text' placeholder=" Empieza a buscar" >
+            <div id='search_submit_btn'><i id='search_fa' class="fa fa-search fa-fw"></i></div>
+          </form>
+       </div>
+      <div id='guide_btn_container'>
+          <div id='guide_btn'>guía rápida</div>
+      </div>
+
+      
+      {{> optionsHeader}}      
+
+      {{> menuHorizontal}}
+        
+
+      <div id='header_main_title1_container' class='section_main_title_container' data-section-to='1' >
+        <div id='hsection1_main_title' class='section_main_title'>
+          Inicio <!--  {{ actualLoadedTemplate }} : {{getRute}} -->          
+        </div>
+      </div>
+  
+  </div>
+</header>
+
+
+</template>
